@@ -578,3 +578,13 @@ let arr = [1,65,8,96,6];
 
  //!difference between map and foreach is that foreach doesn't return anything in the array, it make changes in the array;
 //!while in map it returns a new array with the change element;
+
+
+//**********************************************************find function **********************/
+ var array = [1,5,6,8]
+ var elements = array.find((element,i)=>{
+  if(element == 6){
+    return element;
+  }
+ })
+ console.log(elements);
