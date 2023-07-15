@@ -554,37 +554,565 @@ console.log(fruitss);
 //!Sorting in ascending Order
 
 let arrc = [1,65,8,96,6];
- let sortedc = arr.sort((a,b)=>a - b);
+ let sortedc = arrc.sort((a,b)=>a - b);
  console.log(sortedc);
 
 //!Sorting in descending Order
 
-let arr = [1,65,8,96,6];
- let sorted = arr.sort((a,b)=>a - b);
- console.log(sorted);
+// let arr = [1,65,8,96,6];
+//  let sorted = arr.sort((a,b)=>a - b);
+//  console.log(sorted);
 
  // Array iteration methods operate onn every array item
 
  //The forEach() mehod calls a function (a callback function) or 
 
- var arrays = [1,5,6,3];
- arrays.forEach((element,index,copy)=>{
-  console.log(element);
- });
+//  var arrays = [1,5,6,3];
+//  arrays.forEach((element,index,copy)=>{
+//   console.log(element);
+//  });
 
- var newarr = arrays.map((element)=>{
-  return element*2;
- })
+//  var newarr = arrays.map((element)=>{
+//   return element*2;
+//  })
 
  //!difference between map and foreach is that foreach doesn't return anything in the array, it make changes in the array;
-//!while in map it returns a new array with the change element;
+//!while in map it returns a new array with the changed element;
+//? The forEach() method returns "undefined".
 
 
 //**********************************************************find function **********************/
  var array = [1,5,6,8]
  var elements = array.find((element,i)=>{
   if(element == 6){
-    return element;
+    return element;  // return only the first occurence
   }
  })
  console.log(elements);
+ //! it does not return any array
+
+
+//  //***************************************** array.filter***************************************
+ 
+//  var newarray = [2,3,4,6,54];
+//  const newarray = array.filter((element)=>{
+//   if(element!=4){
+//     return element; // ? We can filter the element through index also example
+//   }
+//   // if(index!=4){    
+//   //   return element;
+//   // }
+//  })
+//  console.log(newarray);
+
+//  let a = [1,2,3,4,4,5]
+//  let aa = a.filter((element,index) => {
+//   if(index!=4){
+//     return element;
+//   }
+//  })
+//  console.log(aa);
+
+ // array join removes array prints normal**********************************************
+//  var arrayl = [2,344,4,6,53]
+//  console.log(arrayl.join());
+
+//  var fruitsm =  ["apple","mango","cherry"];
+//  let search = fruits.includes("apple");
+//  console.log(search);
+
+
+ // !string to array***************************
+ // var names = "India is great country";
+ // console.log(names.split(" "));
+
+
+ 
+ //!reverse elements in an array
+  
+//  var nament = "Fahad";
+//  console.log(nament.reverse());
+
+
+ //?check wether the string in palindrome or not
+  var names = "mam";
+ var ansm = names.split("");
+ console.log(ansm);
+ console.log(ansm.reverse())
+ if(ansm.join() == ansm.reverse().join()){
+  console.log("Palindrome");
+ }
+
+ //! The flat() method creates new array with sub-array elements concatnated to a specific depth;
+  
+ const myArr = [
+   [1,2],
+   [3,4],
+   [5,6],
+ ];
+ const newArr = myArr.flat();
+ console.log(newArr); //!convert a 2d array into 1d array
+
+ // The every()method check if all array values pass a test
+ //example
+  // const numbers = [45,4,9,16,25];
+  // let newArrayn = numbers.every((value,index) => value>18);
+  // console.log(newArrayn); // it will return false;
+
+  // numbers.indexOf(4);
+  // numbers.lastIndexOfindexOf(4);
+       
+  //bubble sort
+  // let h = [100,600,2,21,500];
+
+  // for(var i = 0;i<h.length;i++){
+  //   for(j=0;j<h.length-i+1;j++){ 
+  //         if(h[j]>h[j+1]){
+  //           var temp = h[j];
+  //           h[j] = h[j+1];
+  //           h[j+1] = temp;
+  //         }
+  //       }
+    
+  // }
+  // console.log(h);
+
+  //Selection sort
+
+  // var arr1 = [100,400,2,20,500];
+  // var temp = 0;
+  // for(var i = 0;i<arr1.length-1;j++){
+  //   for(var j = i+1;j<=arr1.length;j++){
+  //     if(arr1[i]>arr1[j]){
+  //       temp = arr1[i];
+  //       arr1[j] = arr1[j];
+  //       arr1[j] = temp;
+  //     }
+  //   }
+  // }
+
+  // print the smallest and the largest number in array ;
+//  console.log(h[0]);
+//  console.log(h[h.length-1]);
+// console.log(h[h.length-2]);
+  
+
+// let d = [800,650,23,21,500];
+
+// for(var i = 0;i<h.length;i++){
+//   for(j=0;j<h.length-i+1;j++){ 
+//         if(d[j]<d[j+1]){
+//           var temp = h[j];
+//           d[j] = d[j+1];
+//           d[j+1] = temp;
+//         }
+//       }
+  
+// }
+// console.log(d);
+
+
+  // var arr9 = [1,4,2,1,2,3,2,5,6,6];
+  // var max = -99999;
+  //  for(var i = 0;i<arr9.length;i++){
+       
+  //  }
+  let h = [100,600,2,21,500];
+for(var i = 0;i<h.length;i++){
+  for(j=0;j<h.length-i+1;j++){ 
+        if(h[j]>h[j+1]){
+          var temp = h[j];
+          h[j] = h[j+1];
+          h[j+1] = temp;
+        }
+      }
+  
+}
+ var arrAns = []
+for(var i = 0;i<h.length;i++){
+     var j= i;
+       var count = 0;
+     while(h[i] == h[j]){
+        count ++;
+        j++;
+     }
+     if(count>0){
+      arrAns.push[h[i]]
+     }
+     i = j -1;
+}
+console.log(arrAns);
+
+
+//************************************Unique Charachters */
+
+let chars = ['A', 'B', 'A', 'C', 'B'];
+let uniqueChars = [...new Set(chars)];
+
+console.log(uniqueChars);
+
+// another approach
+function removeDuplicates(arr, n)
+{
+    // Return, if array is empty
+    // or contains a single element
+    if (n==0 || n==1)
+        return n;
+ 
+    var temp = new Array(n);
+ 
+    // Start traversing elements
+    var j = 0;
+    for (var i=0; i<n-1; i++)
+ 
+        // If current element is not equal
+        // to next element then store that
+        // current element
+        if (arr[i] != arr[i+1])
+            temp[j++] = arr[i];
+ 
+    // Store the last element as whether
+    // it is unique or repeated, it hasn't
+    // stored previously
+    temp[j++] = arr[n-1];
+ 
+    // Modify original array
+    for (var i=0; i<j; i++)
+        arr[i] = temp[i];
+ 
+    return j;
+}
+ 
+var arr = [1, 2, 2, 3, 4, 4, 4, 5, 5];
+
+
+// //JavaScript Objects
+// //JavaScript objects are containers for named values, called properties and methods.
+// // A javaScript object is an entity having state and behavior (properties and method).
+// //For example: car, pen, bike, chair, glass, keyboard, monitor etc.
+
+// // JavaScript is an object-based language. Everything is an object in JavaScript.
+
+// // JavaScript is template based not class based. Here, we don't create class to get the object.
+// // But, we direct create objects.
+
+
+// // Creating Objects in JavaScript
+// // There are 3 ways to create objects.
+
+// // By object literal
+// // By creating instance of Object directly (using new keyword)
+// // By using an object constructor (using new keyword)
+
+// //how to write objects*************************
+
+// //  let students={
+// //     firstName:"seema",
+// //     lastName:"khan",
+// //     rollNo:1
+// //  }
+
+// //    console.log(students)
+
+// //  console.log(students.firstName,students.lastName,students.rollNo)
+
+
+// // //  // //to display records in loops****************************for only valuues
+// // for ( let i in students){
+// //     console.log(students[i]);
+// // }
+
+
+
+// let user = {
+//     uname:"saman",
+//     age:18,
+//     gender:"female",
+//     display:function(){
+// !          console.log( `my name is ${user.uname} my age is ${user.age}`) // this syntax will not work because of this keyword
+
+//         }
+// }
+//  console.log(user);
+
+//  console.log(user.age);
+//  user.display();
+
+
+// // What is this?
+// // In JavaScript, the this keyword refers to an object.
+
+// // Which object depends on how this is being invoked (used or called).
+
+// // The this keyword refers to different objects depending on how it is used:
+
+// // In an object method, this refers to the object.
+// // Alone, this refers to the global object.
+// // In a function, this refers to the global object.
+
+
+// // dont use arrow function
+// let user = {
+//     uname:"saman",
+//     age:18,
+//     gender:"female",
+//     display:function(){
+//          console.log( `my name is ${this.uname} my age is ${this.age}`)
+//         }
+// }
+// console.log(user);
+
+// console.log(user.age);
+// user.display();
+
+
+
+
+// let car ={
+//     color:"red",
+//     sitting :6,
+//     powerWindow:true,
+//     action:function(){
+//         return this.sitting *2
+//     }
+// }
+// console.log(car.action());
+// // Adding New Properties
+// // You can add new properties to an existing object by simply giving it a value.
+
+// // Assume that the person object already exists - you can then give it new properties:
+
+
+// let human ={
+//     fname:"ram",
+//     age:5,
+// }
+// console.log(human);
+// human.natinality="indian"
+// console.log(human);
+
+
+// //  human.nationality="indian"
+
+// //  console.log(human)
+
+
+
+//  //The delete keyword deletes a property from an object:
+//  delete human.fname
+//  console.log(human)
+
+
+
+
+
+
+
+
+
+
+
+// // spread operartor
+// //       ...
+
+
+
+
+// let students ={
+//     fName:"rehan",
+//     sName:"khan",
+//     class:1
+// }
+
+
+//  let latestStuds={...students};
+//  console.log(latestStuds)
+
+
+//    latestStuds.sName="sheikh"
+//   console.log(latestStuds)
+//  console.log(students)
+
+
+
+
+//! /object destructuring very important
+
+
+let person ={
+    fname:"John",
+    age:25,
+    country:"india"
+}
+
+ console.log(person.fname, person.age)
+
+ let {fname,country,age } = person
+ console.log(fname, age )
+
+console.log(this)
+
+//working with multiple objects**********************************
+// let classmattes = [
+//   {
+//       fname: "arshi",
+//       class: 10,
+
+//   },
+//   {
+//       fname: "gul",
+//       class: 11,
+
+//   },
+//   {
+//       fname: "heeba",
+//       class: 12,
+//   },
+//   {
+//       fname: "rahim",
+//       class: 13,
+//   }
+//   ,
+//   {
+//       fname: "gul",
+//       class: 11,
+
+//   }
+// ]
+
+
+
+// classmattes.forEach((element)=>{
+//   console.log(element)
+// })
+
+
+
+// //transformation in aaray*****************************
+// var newClass = classmattes.map((element)=>{
+//   return element.fname +"Miss"
+// })
+
+// console.log(newClass)
+
+
+
+//find function******************************
+// var news=classmattes.find((element)=>{
+//   if (element.fname=="heeba"){
+//       return element
+//   }
+// })
+
+// console.log(news)
+
+
+
+
+
+//delete function*****************************
+// var filteredArray= classmattes.filter((element)=>{
+//   if (element.fname !="gul"){
+//       return element
+//   }
+// })
+// console.log(filteredArray)
+
+
+// var ans = [ 
+//   {
+//     name : "Fahad Khan",
+//     class : "10th",
+//     Hindi : 98,
+//     English : 95,
+//     Maths : 100,
+//     Total : null
+//   },
+//   {
+//     name : "Arham",
+//     class : "10th",
+//     Hindi : 96,
+//     English : 95,
+//     Maths : 99,
+//     Total : null
+//   },
+//   {
+//     name : "Umar",
+//     class : "10th",
+//     Hindi : 93,
+//     English : 94,
+//     Maths : 91,
+//     Total : null
+//   },
+//   {
+//     name : "Faraz",
+//     class : "10th",
+//     Hindi : 98,
+//     English : 97,
+//     Maths : 93,
+//     Total : null
+//   },
+//   {
+//     name : "Zoya",
+//     class : "10th",
+//     Hindi : 94,
+//     English : 93,
+//     Maths : 92,
+//     Total : null
+//   }
+// ]
+
+// for(var i of ans){
+//    i.Total = i.English+i.Hindi+i.Maths;
+//    console.log(`The Total marks of ${i.name} is ${i.Total}`);
+// }
+
+//  let sorted = ans.sort((a,b)=>b.Total - a.Total);
+//  console.log(sorted);
+
+//  // add function ***************************************
+//  const obj = {
+//   name : "Tony Stark",
+//     class : "10th",
+//     Hindi : 94,
+//     English : 93,
+//     Maths : 92,
+//     Total : null
+//  }
+//  ans.push(obj);
+
+//  for(var k = 0;k<3;k++){
+//    console.log(`the ${k+1}st topper is ${ans[k].name}`);
+//  }
+ 
+
+
+//*******************************************************new Array************************************************** */
+
+var library = [
+  {
+    author : "Bill Gates",
+    title : "The Road Ahead",
+    readingStatus : true
+  },
+  {
+    author : "Steve Jobs",
+    title : "Walter Isaacson",
+    readingStatus : true
+  },
+  {
+    author : "Mockingjay : The final book of the hunger Game",
+    title : "Suzanne Collins",
+    readingStatus : false
+  }
+]
+
+
+for(var i of library){
+   if(i.readingStatus == true){ 
+   console.log(`The Book ${i.title} of the author ${i.author} has been read`);
+   }
+   else{
+    console.log(`The Book ${i.title} of the author ${i.author} has not been read`);
+   }
+}
