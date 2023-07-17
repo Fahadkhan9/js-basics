@@ -1116,3 +1116,80 @@ for(var i of library){
     console.log(`The Book ${i.title} of the author ${i.author} has not been read`);
    }
 }
+
+//**************************************2 another methods for creating an Object*************************************** */
+
+//**********************************first instance method********************************************** */
+//*****************************By creating instance of object directly (using new keyword) */
+
+var emp = new Object();
+emp.id = 101;
+emp.name = "Ravi Malik";
+emp.salary = 50000;
+console.log(emp.id+" "+emp.name+emp.salary);
+console.log(emp);
+
+
+//********************************************Using constructor method************************************************************************ *
+function Fruits(names,tastes,seeds){
+  this.namee = names;
+  this.taste = tastes;
+  this.seeds = seeds;
+  this.texture = function(){
+    console.log(this.taste,"is Sour")
+  }
+}
+const fruit1 = new Fruits('Yellow','Sweet',1);
+fruit1.texture();
+
+
+//? //***************************************************new Method get date */
+
+var date = new Date();
+console.log(date.getDate());
+
+//? in javascript(OOPS) is little different 
+//* because it works on client side
+//! it contains prototype inheritance
+//* it uses prototype class
+//* which include function like map, sort,push
+
+
+class Forms{
+  submit(){
+    alert(this.name+" submitted! the form");
+  }
+  cancel(){
+    alert(this.name+" cancelled! for train no" + this.trainNo)
+  }
+
+  fillForm(namee,train){
+    this.name = namee
+    this.trainNo = train
+  }
+
+}
+let ram = new Forms
+ram.fillForm("ram",120223);
+ram.submit();
+ram.cancel();
+
+class Forms{
+    constructor(namee,train){
+    this.name = namee
+    this.trainNo = train
+  }
+  submit(){
+    alert(this.name+" submitted! the form");
+  }
+  cancel(){
+    alert(this.name+" cancelled! for train no" + this.trainNo)
+  }
+
+}
+
+let rams = new Forms("ram",135656);
+ram.submit();
+ram.cancel();
+
+//!inheritance is same as java . with same as syntax
