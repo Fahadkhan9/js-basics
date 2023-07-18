@@ -939,18 +939,18 @@ var arr = [1, 2, 2, 3, 4, 4, 4, 5, 5];
 //! /object destructuring very important
 
 
-let person ={
-    fname:"John",
-    age:25,
-    country:"india"
-}
+// let person ={
+//     fname:"John",
+//     age:25,
+//     country:"india"
+// }
 
- console.log(person.fname, person.age)
+//  console.log(person.fname, person.age)
 
- let {fname,country,age } = person
- console.log(fname, age )
+//  let {fname,country,age } = person
+//  console.log(fname, age )
 
-console.log(this)
+// console.log(this)
 
 //working with multiple objects**********************************
 // let classmattes = [
@@ -1089,64 +1089,64 @@ console.log(this)
 
 //*******************************************************new Array************************************************** */
 
-var library = [
-  {
-    author : "Bill Gates",
-    title : "The Road Ahead",
-    readingStatus : true
-  },
-  {
-    author : "Steve Jobs",
-    title : "Walter Isaacson",
-    readingStatus : true
-  },
-  {
-    author : "Mockingjay : The final book of the hunger Game",
-    title : "Suzanne Collins",
-    readingStatus : false
-  }
-]
+// var library = [
+//   {
+//     author : "Bill Gates",
+//     title : "The Road Ahead",
+//     readingStatus : true
+//   },
+//   {
+//     author : "Steve Jobs",
+//     title : "Walter Isaacson",
+//     readingStatus : true
+//   },
+//   {
+//     author : "Mockingjay : The final book of the hunger Game",
+//     title : "Suzanne Collins",
+//     readingStatus : false
+//   }
+// ]
 
 
-for(var i of library){
-   if(i.readingStatus == true){ 
-   console.log(`The Book ${i.title} of the author ${i.author} has been read`);
-   }
-   else{
-    console.log(`The Book ${i.title} of the author ${i.author} has not been read`);
-   }
-}
+// for(var i of library){
+//    if(i.readingStatus == true){ 
+//    console.log(`The Book ${i.title} of the author ${i.author} has been read`);
+//    }
+//    else{
+//     console.log(`The Book ${i.title} of the author ${i.author} has not been read`);
+//    }
+// }
 
-//**************************************2 another methods for creating an Object*************************************** */
+// //**************************************2 another methods for creating an Object*************************************** */
 
-//**********************************first instance method********************************************** */
-//*****************************By creating instance of object directly (using new keyword) */
+// //**********************************first instance method********************************************** */
+// //*****************************By creating instance of object directly (using new keyword) */
 
-var emp = new Object();
-emp.id = 101;
-emp.name = "Ravi Malik";
-emp.salary = 50000;
-console.log(emp.id+" "+emp.name+emp.salary);
-console.log(emp);
-
-
-//********************************************Using constructor method************************************************************************ *
-function Fruits(names,tastes,seeds){
-  this.namee = names;
-  this.taste = tastes;
-  this.seeds = seeds;
-  this.texture = function(){
-    console.log(this.taste,"is Sour")
-  }
-}
-const fruit1 = new Fruits('Yellow','Sweet',1);
-fruit1.texture();
+// var emp = new Object();
+// emp.id = 101;
+// emp.name = "Ravi Malik";
+// emp.salary = 50000;
+// console.log(emp.id+" "+emp.name+emp.salary);
+// console.log(emp);
 
 
-//? //***************************************************new Method get date */
+// //********************************************Using constructor method************************************************************************ *
+// function Fruits(names,tastes,seeds){
+//   this.namee = names;
+//   this.taste = tastes;
+//   this.seeds = seeds;
+//   this.texture = function(){
+//     console.log(this.taste,"is Sour")
+//   }
+// }
+// const fruit1 = new Fruits('Yellow','Sweet',1);
+// fruit1.texture();
 
-var date = new Date();
-console.log(date.getDate());
+
+// //? //***************************************************new Method get date */
+
+// var date = new Date();
+// console.log(date.getDate());
 
 //? in javascript(OOPS) is little different 
 //* because it works on client side
@@ -1155,41 +1155,113 @@ console.log(date.getDate());
 //* which include function like map, sort,push
 
 
-class Forms{
-  submit(){
-    alert(this.name+" submitted! the form");
-  }
-  cancel(){
-    alert(this.name+" cancelled! for train no" + this.trainNo)
-  }
+// class Forms{
+//   submit(){
+//     alert(this.name+" submitted! the form");
+//   }
+//   cancel(){
+//     alert(this.name+" cancelled! for train no" + this.trainNo)
+//   }
 
-  fillForm(namee,train){
-    this.name = namee
-    this.trainNo = train
-  }
+//   fillForm(namee,train){
+//     this.name = namee
+//     this.trainNo = train
+//   }
 
+// }
+// let ram = new Forms
+// ram.fillForm("ram",120223);
+// ram.submit();
+// ram.cancel();
+
+// class Forms{
+//     constructor(namee,train){
+//     this.name = namee
+//     this.trainNo = train
+//   }
+//   submit(){
+//     alert(this.name+" submitted! the form");
+//   }
+//   cancel(){
+//     alert(this.name+" cancelled! for train no" + this.trainNo)
+//   }
+
+// }
+
+// let rams = new Forms("ram",135656);
+// ram.submit();
+// ram.cancel();
+
+// //!inheritance is same as java with same syntax
+
+
+// class students{
+//   constructor(namek,age){
+//     this.namek = namek;
+//     this.age = age;
+//   }
+//   myself(){
+//     console.log(`hi i m ${this.namek} and i am ${this.age} years old`)
+//   }
+// }
+
+// class NewStudent extends students{
+//   player(){
+//     console.log(`hi i m a player named ${this.namek} and i am ${this.age} years old`)
+//   }
+// }
+// let saman = new NewStudent("samans",25);
+
+//! *************************************************Method overriding
+
+//?  javascript does support overiding instead of overloading 
+//? defining multiple functions with same is referred to function overriding
+//? when multiple functions are overrridden the javascript compiler calls the last one
+// ? while calling the function this is because javascript is an interpreted language 
+//? In inheritance , the same named child class method over
+
+
+// class studentsm{
+//   constructor(namek,age){
+//     this.namek = namek;
+//     this.age = age;
+//   }
+//   myself(){
+//     console.log(`hi i m ${this.namek} and i am ${this.age} years old`)
+//   }
+// }
+
+// class NewStudentm extends studentsm{
+//   myself(){
+//     console.log(`hi i m a player named ${this.namek} and i am ${this.age} years old`) //! object overriding will happen here
+//   }
+// }
+// let samank = new NewStudentm("samans",25);
+// samank.myself();
+
+//! ****************************************Super Keyword******************************************************
+
+ // the super keyword is used in a subclass to access a method or property defined in its parent class
+
+ 
+
+class studentsm{
+  constructor(namek,age){
+    this.namek = namek;
+    this.age = age;
+
+  }
+  myself(nationality){
+    console.log(`hi i m ${this.namek} and i am ${this.age} years old and i am ${nationality}`)
+  }
 }
-let ram = new Forms
-ram.fillForm("ram",120223);
-ram.submit();
-ram.cancel();
 
-class Forms{
-    constructor(namee,train){
-    this.name = namee
-    this.trainNo = train
+class NewStudentm extends studentsm{
+  myself(nationality){
+    super.myself("japanese");
+    console.log("above is the use of super keyword");
+    console.log(`hi i m a player named ${this.namek} and i am ${this.age} years old and my nationality is ${nationality}`) //! object overriding will happen here
   }
-  submit(){
-    alert(this.name+" submitted! the form");
-  }
-  cancel(){
-    alert(this.name+" cancelled! for train no" + this.trainNo)
-  }
-
 }
-
-let rams = new Forms("ram",135656);
-ram.submit();
-ram.cancel();
-
-//!inheritance is same as java . with same as syntax
+let samank = new NewStudentm("samans",25);
+samank.myself("Indian");
