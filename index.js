@@ -41,9 +41,9 @@
 //  h = 8;
 //  console.log(h);
 
- // var can be redeclared 
- // let cannot be redeclared it can be reassigned 
- // const cannot be redeclared as well as reassigned
+// var can be redeclared 
+// let cannot be redeclared it can be reassigned 
+// const cannot be redeclared as well as reassigned
 
 
 
@@ -132,7 +132,7 @@
 //  var sip = (p*r*t)/100;
 //  console.log(`the simple interest is ${sip}`);
 
- //************************valid triangle************************ */
+//************************valid triangle************************ */
 
 //  var p = (prompt("enter first side"));
 //  var q = (prompt("enter second side"));
@@ -159,7 +159,7 @@
 
 // if(sp>cp){
 //   console.log("profit is",sp-cp);
- 
+
 // }
 
 // else{
@@ -224,11 +224,11 @@
 //   console.log("field is empty")
 //  }
 
- // input no to check no is even and give its power and no>100
-  
+// input no to check no is even and give its power and no>100
+
 //  var num = prompt("enter number");
 //  if(num%2==0){
-   
+
 //     if(num**num>100){
 //       console.log("your number is valid");
 //     }
@@ -275,52 +275,52 @@
 
 
 //
-  //  let operator = prompt("enter operator");
-  //  let operand1 = +prompt("enter first operand");
-  //  let operand2 = +prompt("enter Second operand");
-  //  let ans = 0;
+//  let operator = prompt("enter operator");
+//  let operand1 = +prompt("enter first operand");
+//  let operand2 = +prompt("enter Second operand");
+//  let ans = 0;
 
-  //    switch(operator){
-  //     case "+": 
-  //     ans = operand1 + operand2;
-  //     break;
-  //     case "*": 
-  //     ans = operand1 * operand2;
-  //     break;
-  //     case "/": 
-  //     ans = operand1 / operand2;
-  //     break;
-  //     case "-": 
-  //     ans = operand1 - operand2;
-  //     break;
-  //    }
-  //    console.log(`${operand1} ${operator} ${operand2} = ${ans}`)
+//    switch(operator){
+//     case "+": 
+//     ans = operand1 + operand2;
+//     break;
+//     case "*": 
+//     ans = operand1 * operand2;
+//     break;
+//     case "/": 
+//     ans = operand1 / operand2;
+//     break;
+//     case "-": 
+//     ans = operand1 - operand2;
+//     break;
+//    }
+//    console.log(`${operand1} ${operator} ${operand2} = ${ans}`)
 
-  // let o = +prompt("enter no");
-  // let k = 1;
-  // while(k<=10){
-  //   var ans = o*k;
-  //   console.log(`${o} x ${i} = ${ans}`);
-  //   k++;
-  // }
+// let o = +prompt("enter no");
+// let k = 1;
+// while(k<=10){
+//   var ans = o*k;
+//   console.log(`${o} x ${i} = ${ans}`);
+//   k++;
+// }
 
-  // let sum = 0;
-  // let w = 1;
-  // while(w <= 10){
-  //    sum += i;
-  //    w++;
-  // }
-  // console.log(sum);
+// let sum = 0;
+// let w = 1;
+// while(w <= 10){
+//    sum += i;
+//    w++;
+// }
+// console.log(sum);
 
-  // var inp = +prompt("enter no");
-  // var cnt = 0;
-  // var sume = 0;
-  // while(cnt<=inp){
-  //    if(cnt%2==0){
-  //     sume = sume+cnt;
-  //    }
-  //   cnt++;
-  // }
+// var inp = +prompt("enter no");
+// var cnt = 0;
+// var sume = 0;
+// while(cnt<=inp){
+//    if(cnt%2==0){
+//     sume = sume+cnt;
+//    }
+//   cnt++;
+// }
 // var inp = +prompt("enter no");
 //  var fact = 1;
 // while(inp>=1){
@@ -332,7 +332,7 @@
 // var inp = +prompt("enter no");
 // var ans = toString(inp);
 // console.log(ans.length);
-  
+
 // var ans;
 // sum = 0;
 // while(ans!=0){
@@ -404,7 +404,7 @@
 // lengthq(num1);
 
 
-const sub = (num1,num2) => num1+num2;
+const sub = (num1, num2) => num1 + num2;
 
 //*********************************string methods*************************** */
 
@@ -466,7 +466,7 @@ console.log(textm.match(/ain/));
 
 //****************************************ARRAYS*************************************** */
 
-let array2 = ["rohan","raman","meet","saman",5,6];
+let array2 = ["rohan", "raman", "meet", "saman", 5, 6];
 console.log(array2);
 
 //you access an array element by referring to the index number
@@ -478,7 +478,7 @@ console.log(array2);
 
 //method to string
 
-let array3 = ["rohan","raman","meet","saman"];
+let array3 = ["rohan", "raman", "meet", "saman"];
 console.log(array3.toString());
 
 
@@ -494,17 +494,17 @@ console.log(array3.toString());
 //! forin---------------------------------------------------------------------------
 //!-----------------------------------------very important
 
-  //  var arr = [10,20,30,-40,50,60];
-  //  var sum = 0;
-  //  for(var i of arr){
-  //   if(i>0){
-  //     console.log(i);
-  //   }
-  //   sum += i;
-  //  }
-  //  console.log(sum);
+//  var arr = [10,20,30,-40,50,60];
+//  var sum = 0;
+//  for(var i of arr){
+//   if(i>0){
+//     console.log(i);
+//   }
+//   sum += i;
+//  }
+//  console.log(sum);
 
-   //write a program to even and odd to store 6 element in an array
+//write a program to even and odd to store 6 element in an array
 
 //    var arr = [10,20,30,-40,50,60,67];
 //    for(var i of arr)
@@ -518,21 +518,21 @@ console.log(array3.toString());
 //    }
 // }  
 
-let fruits = ["Banana","Apple","Orange","Mango"];
+let fruits = ["Banana", "Apple", "Orange", "Mango"];
 fruits.pop();     //! remove an element in array
- fruits.push("grapes") //! enter an element from the last
- fruits.shift() //! remove an element from the first;
- fruits.unshift("Custard Apple") //! enter an element from the first
+fruits.push("grapes") //! enter an element from the last
+fruits.shift() //! remove an element from the first;
+fruits.unshift("Custard Apple") //! enter an element from the first
 
 
 // let girls = ["saman","nancy","rani"];
 // let boys = ["sam","ram","hari"]
-                                //? concat join 2 arrays 
+//? concat join 2 arrays 
 // let children = girls.concat(boys);
 // console.log(children);
 
- const sabji = ["Aaloo","Gobi","matar","tamaatar"];
- sabji.splice(2,0,"karela","bhindi");
+const sabji = ["Aaloo", "Gobi", "matar", "tamaatar"];
+sabji.splice(2, 0, "karela", "bhindi");
 //! The first parameter(2) defines the position where new elements should be added
 //* the second paramater(0) defiens how many elements should be removed.
 //* the rest of parametrs "karela" and "bhindi" defines the new element to be inserted
@@ -541,21 +541,21 @@ fruits.pop();     //! remove an element in array
 //The slice method slices the piece of array into a new array
 // the slice() method creates a new array.
 // this example slice out a part of an array starting from array
-const cars = ["alto","Santro","800","swift"];
+const cars = ["alto", "Santro", "800", "swift"];
 const carsm = cars.slice(2);
-const carsl = carsm.slice(1,3);
+const carsl = carsm.slice(1, 3);
 console.log(carsm);
 
 //sorting for alphabetical orders
-const fruitss = ["Banana","Orange","Apple","Mango"];
-fruitss .sort();
+const fruitss = ["Banana", "Orange", "Apple", "Mango"];
+fruitss.sort();
 console.log(fruitss);
 
 //!Sorting in ascending Order
 
-let arrc = [1,65,8,96,6];
- let sortedc = arrc.sort((a,b)=>a - b);
- console.log(sortedc);
+let arrc = [1, 65, 8, 96, 6];
+let sortedc = arrc.sort((a, b) => a - b);
+console.log(sortedc);
 
 //!Sorting in descending Order
 
@@ -563,9 +563,9 @@ let arrc = [1,65,8,96,6];
 //  let sorted = arr.sort((a,b)=>a - b);
 //  console.log(sorted);
 
- // Array iteration methods operate onn every array item
+// Array iteration methods operate onn every array item
 
- //The forEach() mehod calls a function (a callback function) or 
+//The forEach() mehod calls a function (a callback function) or 
 
 //  var arrays = [1,5,6,3];
 //  arrays.forEach((element,index,copy)=>{
@@ -576,24 +576,24 @@ let arrc = [1,65,8,96,6];
 //   return element*2;
 //  })
 
- //!difference between map and foreach is that foreach doesn't return anything in the array, it make changes in the array;
+//!difference between map and foreach is that foreach doesn't return anything in the array, it make changes in the array;
 //!while in map it returns a new array with the changed element;
 //? The forEach() method returns "undefined".
 
 
 //**********************************************************find function **********************/
- var array = [1,5,6,8]
- var elements = array.find((element,i)=>{
-  if(element == 6){
+var array = [1, 5, 6, 8]
+var elements = array.find((element, i) => {
+  if (element == 6) {
     return element;  // return only the first occurence
   }
- })
- console.log(elements);
- //! it does not return any array
+})
+console.log(elements);
+//! it does not return any array
 
 
 //  //***************************************** array.filter***************************************
- 
+
 //  var newarray = [2,3,4,6,54];
 //  const newarray = array.filter((element)=>{
 //   if(element!=4){
@@ -613,7 +613,7 @@ let arrc = [1,65,8,96,6];
 //  })
 //  console.log(aa);
 
- // array join removes array prints normal**********************************************
+// array join removes array prints normal**********************************************
 //  var arrayl = [2,344,4,6,53]
 //  console.log(arrayl.join());
 
@@ -622,80 +622,80 @@ let arrc = [1,65,8,96,6];
 //  console.log(search);
 
 
- // !string to array***************************
- // var names = "India is great country";
- // console.log(names.split(" "));
+// !string to array***************************
+// var names = "India is great country";
+// console.log(names.split(" "));
 
 
- 
- //!reverse elements in an array
-  
+
+//!reverse elements in an array
+
 //  var nament = "Fahad";
 //  console.log(nament.reverse());
 
 
- //?check wether the string in palindrome or not
-  var names = "mam";
- var ansm = names.split("");
- console.log(ansm);
- console.log(ansm.reverse())
- if(ansm.join() == ansm.reverse().join()){
+//?check wether the string in palindrome or not
+var names = "mam";
+var ansm = names.split("");
+console.log(ansm);
+console.log(ansm.reverse())
+if (ansm.join() == ansm.reverse().join()) {
   console.log("Palindrome");
- }
+}
 
- //! The flat() method creates new array with sub-array elements concatnated to a specific depth;
-  
- const myArr = [
-   [1,2],
-   [3,4],
-   [5,6],
- ];
- const newArr = myArr.flat();
- console.log(newArr); //!convert a 2d array into 1d array
+//! The flat() method creates new array with sub-array elements concatnated to a specific depth;
 
- // The every()method check if all array values pass a test
- //example
-  // const numbers = [45,4,9,16,25];
-  // let newArrayn = numbers.every((value,index) => value>18);
-  // console.log(newArrayn); // it will return false;
+const myArr = [
+  [1, 2],
+  [3, 4],
+  [5, 6],
+];
+const newArr = myArr.flat();
+console.log(newArr); //!convert a 2d array into 1d array
 
-  // numbers.indexOf(4);
-  // numbers.lastIndexOfindexOf(4);
-       
-  //bubble sort
-  // let h = [100,600,2,21,500];
+// The every()method check if all array values pass a test
+//example
+// const numbers = [45,4,9,16,25];
+// let newArrayn = numbers.every((value,index) => value>18);
+// console.log(newArrayn); // it will return false;
 
-  // for(var i = 0;i<h.length;i++){
-  //   for(j=0;j<h.length-i+1;j++){ 
-  //         if(h[j]>h[j+1]){
-  //           var temp = h[j];
-  //           h[j] = h[j+1];
-  //           h[j+1] = temp;
-  //         }
-  //       }
-    
-  // }
-  // console.log(h);
+// numbers.indexOf(4);
+// numbers.lastIndexOfindexOf(4);
 
-  //Selection sort
+//bubble sort
+// let h = [100,600,2,21,500];
 
-  // var arr1 = [100,400,2,20,500];
-  // var temp = 0;
-  // for(var i = 0;i<arr1.length-1;j++){
-  //   for(var j = i+1;j<=arr1.length;j++){
-  //     if(arr1[i]>arr1[j]){
-  //       temp = arr1[i];
-  //       arr1[j] = arr1[j];
-  //       arr1[j] = temp;
-  //     }
-  //   }
-  // }
+// for(var i = 0;i<h.length;i++){
+//   for(j=0;j<h.length-i+1;j++){ 
+//         if(h[j]>h[j+1]){
+//           var temp = h[j];
+//           h[j] = h[j+1];
+//           h[j+1] = temp;
+//         }
+//       }
 
-  // print the smallest and the largest number in array ;
+// }
+// console.log(h);
+
+//Selection sort
+
+// var arr1 = [100,400,2,20,500];
+// var temp = 0;
+// for(var i = 0;i<arr1.length-1;j++){
+//   for(var j = i+1;j<=arr1.length;j++){
+//     if(arr1[i]>arr1[j]){
+//       temp = arr1[i];
+//       arr1[j] = arr1[j];
+//       arr1[j] = temp;
+//     }
+//   }
+// }
+
+// print the smallest and the largest number in array ;
 //  console.log(h[0]);
 //  console.log(h[h.length-1]);
 // console.log(h[h.length-2]);
-  
+
 
 // let d = [800,650,23,21,500];
 
@@ -707,39 +707,39 @@ let arrc = [1,65,8,96,6];
 //           d[j+1] = temp;
 //         }
 //       }
-  
+
 // }
 // console.log(d);
 
 
-  // var arr9 = [1,4,2,1,2,3,2,5,6,6];
-  // var max = -99999;
-  //  for(var i = 0;i<arr9.length;i++){
-       
-  //  }
-  let h = [100,600,2,21,500];
-for(var i = 0;i<h.length;i++){
-  for(j=0;j<h.length-i+1;j++){ 
-        if(h[j]>h[j+1]){
-          var temp = h[j];
-          h[j] = h[j+1];
-          h[j+1] = temp;
-        }
-      }
-  
+// var arr9 = [1,4,2,1,2,3,2,5,6,6];
+// var max = -99999;
+//  for(var i = 0;i<arr9.length;i++){
+
+//  }
+let h = [100, 600, 2, 21, 500];
+for (var i = 0; i < h.length; i++) {
+  for (j = 0; j < h.length - i + 1; j++) {
+    if (h[j] > h[j + 1]) {
+      var temp = h[j];
+      h[j] = h[j + 1];
+      h[j + 1] = temp;
+    }
+  }
+
 }
- var arrAns = []
-for(var i = 0;i<h.length;i++){
-     var j= i;
-       var count = 0;
-     while(h[i] == h[j]){
-        count ++;
-        j++;
-     }
-     if(count>0){
-      arrAns.push[h[i]]
-     }
-     i = j -1;
+var arrAns = []
+for (var i = 0; i < h.length; i++) {
+  var j = i;
+  var count = 0;
+  while (h[i] == h[j]) {
+    count++;
+    j++;
+  }
+  if (count > 0) {
+    arrAns.push[h[i]]
+  }
+  i = j - 1;
 }
 console.log(arrAns);
 
@@ -752,37 +752,36 @@ let uniqueChars = [...new Set(chars)];
 console.log(uniqueChars);
 
 // another approach
-function removeDuplicates(arr, n)
-{
-    // Return, if array is empty
-    // or contains a single element
-    if (n==0 || n==1)
-        return n;
- 
-    var temp = new Array(n);
- 
-    // Start traversing elements
-    var j = 0;
-    for (var i=0; i<n-1; i++)
- 
-        // If current element is not equal
-        // to next element then store that
-        // current element
-        if (arr[i] != arr[i+1])
-            temp[j++] = arr[i];
- 
-    // Store the last element as whether
-    // it is unique or repeated, it hasn't
-    // stored previously
-    temp[j++] = arr[n-1];
- 
-    // Modify original array
-    for (var i=0; i<j; i++)
-        arr[i] = temp[i];
- 
-    return j;
+function removeDuplicates(arr, n) {
+  // Return, if array is empty
+  // or contains a single element
+  if (n == 0 || n == 1)
+    return n;
+
+  var temp = new Array(n);
+
+  // Start traversing elements
+  var j = 0;
+  for (var i = 0; i < n - 1; i++)
+
+    // If current element is not equal
+    // to next element then store that
+    // current element
+    if (arr[i] != arr[i + 1])
+      temp[j++] = arr[i];
+
+  // Store the last element as whether
+  // it is unique or repeated, it hasn't
+  // stored previously
+  temp[j++] = arr[n - 1];
+
+  // Modify original array
+  for (var i = 0; i < j; i++)
+    arr[i] = temp[i];
+
+  return j;
 }
- 
+
 var arr = [1, 2, 2, 3, 4, 4, 4, 5, 5];
 
 
@@ -1084,7 +1083,7 @@ var arr = [1, 2, 2, 3, 4, 4, 4, 5, 5];
 //  for(var k = 0;k<3;k++){
 //    console.log(`the ${k+1}st topper is ${ans[k].name}`);
 //  }
- 
+
 
 
 //*******************************************************new Array************************************************** */
@@ -1241,27 +1240,198 @@ var arr = [1, 2, 2, 3, 4, 4, 4, 5, 5];
 
 //! ****************************************Super Keyword******************************************************
 
- // the super keyword is used in a subclass to access a method or property defined in its parent class
+// the super keyword is used in a subclass to access a method or property defined in its parent class
 
+
+
+// class studentsm {
+//   constructor(namek, age) {
+//     this.namek = namek;
+//     this.age = age;
+
+//   }
+//   myself(nationality) {
+//     console.log(`hi i m ${this.namek} and i am ${this.age} years old and i am ${nationality}`)
+//   }
+// }
+
+// class NewStudentm extends studentsm {
+//   myself(nationality) {
+//     super.myself("japanese");
+//     console.log("above is the use of super keyword");
+//     console.log(`hi i m a player named ${this.namek} and i am ${this.age} years old and my nationality is ${nationality}`) //! object overriding will happen here
+//   }
+// }
+// let samank = new NewStudentm("samans", 25);
+// samank.myself("Indian");
+
+
+//!  Static method********************************************************************
+//* which remains same for each object of class 
+//* this means that the function is called by class name and not after instantiating object and calling through it
+
+// class Example {
+//   static myStaticProperty = 'Hello,world!';
+//   static myStaticMethod() {
+//     console.log('This is a static method');
+//   }
+//   myfunction() {
+//     console.log("this is my function");
+//   }
+// }
+
+// let m = new Example;
+// m.myfunction();
+// Example.myStaticMethod();
+// console.log(Example.myStaticMethod);
+
+//! note by # we can keep method and properties of a class as private we can set it by using setter and getters
+// class Counter {
+//   //this is a private property
+//   #count = 0;
+
+//   increment() {
+//     //only methods of this class can access this member
+//     this.#count++;
+//   }
+//   // we need a public method to get the value of the private
+//   getCount() {
+//     return this.#count;
+//   }
+// }
+
+// let counter = new Counter();
+// counter.increment();
+
+// console.log(counter.getCount());
+//Output : 2
+
+//console.log(counter.#count);//not allowed
+//? note protected member is declared with underscore_
+//! program to know how old is a person through class;
+
+class Age {
+  constructor(name, DOB) {
+    this.name = name;
+    this.DOB = DOB;
+  }
+  calculate_age() {
+    const d = new Date();
+    let year = d.getFullYear();
+    return year - this.DOB;
+  }
+}
  
+var names = "current_name";
 
-class studentsm{
-  constructor(namek,age){
-    this.namek = namek;
-    this.age = age;
+let age_ans = new Age(names,1980);
+console.log(age_ans.calculate_age());
 
-  }
-  myself(nationality){
-    console.log(`hi i m ${this.namek} and i am ${this.age} years old and i am ${nationality}`)
-  }
-}
+//! *************************************** different consoles***************************************** */
 
-class NewStudentm extends studentsm{
-  myself(nationality){
-    super.myself("japanese");
-    console.log("above is the use of super keyword");
-    console.log(`hi i m a player named ${this.namek} and i am ${this.age} years old and my nationality is ${nationality}`) //! object overriding will happen here
-  }
-}
-let samank = new NewStudentm("samans",25);
-samank.myself("Indian");
+console.warn("this is warning");
+console.error("this is error");
+console.info("this is information");
+
+
+//?-----------------------------------------Reduce method------------------------
+let arr_reduce=[2,5,6,5,8];
+let ne = arr.reduce((a,b) => {
+  return a+b;
+})
+
+console.log(ne);
+//! *******************************************Math.random
+// let b
+// let a = Math.random()*100
+
+//console.log(a);
+
+
+//!local storage is very very important*********************************************************************
+
+// let key = prompt("Enter key");
+// let value = prompt("Enter value");
+
+// //store key value pairt
+// localStorage.setItem(key,value)
+
+// //get value through key name
+// console.log(localStorage.getItem(key,value));
+
+// //for clearing it we will use
+// localStorage.clear();
+
+// Creating Object
+// this object will be saved to local host
+// const objectRegion = {
+//   Region : "Asia",
+//   Country : "India"
+// }
+
+// // defining key and value
+// const key = "Myobject";
+// const value = JSON.stringify(objectRegion)
+
+// //setting the key-value pair to localhost
+// window.localStorage.setItem(key,value);
+
+//  //Getting the key-value pair to localhost using the getItem() method with the key attribute
+//  //getItem() mehtod is used to get the value from localStorage using key
+// let object = window.localStorage.getItem(Key);
+// console.log(object);
+
+// let n = JSON.parse(object);
+// console.log(n);
+// console.log(window);
+
+
+//! ******************************************reduce method****************************************************
+
+  // let arrn = [1,5,6,8]
+  // let narr = arrn.reduce((a,b)=>{
+  //   return a+b
+  // });
+  // //? reduce method iterates throught the whole array
+
+  //! import and exports in javascript **************************************************************************
+  //? first we have to declare script type as module in index.js file
+  //? then we have to export the file from where we have to export and we can import from where we can import
+
+  import{aa,obj} from "./index2.js";
+  console.log(aa,obj);
+
+  //! =======================================Session storage=====================================================
+
+   
+//Use the window.sessionStorage property of the window object to gain access
+//to the sessionStorage.
+// The sessionStorage object let you store key/value pairs in the browser.
+
+// Note
+// The sessionStorage object stores data for only one session.
+
+// (The data is deleted when the browser is closed).
+
+
+
+// // Save data to sessionStorage
+ sessionStorage.setItem("keyssssssssssss", "valuessssssssssss");
+
+ // Get saved data from sessionStorage
+ let data = sessionStorage.getItem("key");
+
+
+
+// // Remove all saved data from sessionStorage
+ sessionStorage.clear();
+
+
+// let key= "name";
+// let value= " raman"
+//  sessionStorage.setItem(key,value);
+
+
+//  let data = sessionStorage.getItem(key);
+//  console.log(data);
+  
