@@ -1321,10 +1321,10 @@ class Age {
     return year - this.DOB;
   }
 }
- 
+
 var names = "current_name";
 
-let age_ans = new Age(names,1980);
+let age_ans = new Age(names, 1980);
 console.log(age_ans.calculate_age());
 
 //! *************************************** different consoles***************************************** */
@@ -1335,9 +1335,9 @@ console.info("this is information");
 
 
 //?-----------------------------------------Reduce method------------------------
-let arr_reduce=[2,5,6,5,8];
-let ne = arr.reduce((a,b) => {
-  return a+b;
+let arr_reduce = [2, 5, 6, 5, 8];
+let ne = arr.reduce((a, b) => {
+  return a + b;
 })
 
 console.log(ne);
@@ -1388,22 +1388,22 @@ console.log(ne);
 
 //! ******************************************reduce method****************************************************
 
-  // let arrn = [1,5,6,8]
-  // let narr = arrn.reduce((a,b)=>{
-  //   return a+b
-  // });
-  // //? reduce method iterates throught the whole array
+// let arrn = [1,5,6,8]
+// let narr = arrn.reduce((a,b)=>{
+//   return a+b
+// });
+// //? reduce method iterates throught the whole array
 
-  //! import and exports in javascript **************************************************************************
-  //? first we have to declare script type as module in index.js file
-  //? then we have to export the file from where we have to export and we can import from where we can import
+//! import and exports in javascript **************************************************************************
+//? first we have to declare script type as module in index.js file
+//? then we have to export the file from where we have to export and we can import from where we can import
 
-  import{aa,obj} from "./index2.js";
-  console.log(aa,obj);
+import { aa, obj } from "./index2.js";
+console.log(aa, obj);
 
-  //! =======================================Session storage=====================================================
+//! =======================================Session storage=====================================================
 
-   
+
 //Use the window.sessionStorage property of the window object to gain access
 //to the sessionStorage.
 // The sessionStorage object let you store key/value pairs in the browser.
@@ -1416,15 +1416,15 @@ console.log(ne);
 
 
 // // Save data to sessionStorage
- sessionStorage.setItem("keyssssssssssss", "valuessssssssssss");
+sessionStorage.setItem("keyssssssssssss", "valuessssssssssss");
 
- // Get saved data from sessionStorage
- let data = sessionStorage.getItem("key");
+// Get saved data from sessionStorage
+let data = sessionStorage.getItem("key");
 
 
 
 // // Remove all saved data from sessionStorage
- sessionStorage.clear();
+sessionStorage.clear();
 
 
 // let key= "name";
@@ -1434,4 +1434,133 @@ console.log(ne);
 
 //  let data = sessionStorage.getItem(key);
 //  console.log(data);
-  
+
+//! ********************************************Synchronous nature of javascript
+
+// console.log("boil egg");
+// console.log("toast bread");
+// console.log("make tea");
+
+//! ********************************************ASynchronous nature of javascript
+//? with asynchronous code , multiple tasks can execute at the same time wile tasks in the background finish.
+//? This is what we call non blocking code 
+//? the execution of other code won't stop while an asynchrous tasks finishes it swork
+// console.log("boil egg");
+
+// setTimeout(()=>{
+//   console.log("toast bread");
+// },1000);
+
+// console.log("make tea");
+
+//! *************************************************callbacks**************************************************
+
+//? when function are passeda as an arguement to another function it is called as callback function 
+//? it depends one function on another functions
+//? once the  function is sent  as an arguement to another function the function isn called inside another function
+
+
+
+//! Example number 1**********************************************************************************************
+
+
+// let order = (production_callback) => {
+//   console.log("Order placed")
+//   production_callback();
+// }
+
+
+
+// let production = () => {
+//   console.log("production started");
+// };
+
+// order(production);
+
+//! Example number 2***********************************************************************************************
+
+//? although we used the settimout in the parent function, it will always call the parent function first then it will call the calllback
+
+
+
+// let order1 = (production_callback) => {
+
+//   console.log("Order placed");
+
+//   setTimeout(() => { production_callback() }, 2000);
+// }
+
+
+
+// let production1 = () => {
+//   console.log("production started");
+// };
+
+// order1(production1);
+
+//! *********************************************Example 3*********************************************
+
+// function add(a, b, callback) {
+//   let s = a + b;
+//   console.log("total", s);
+//   callback(s)
+// };
+
+// function final(s) {
+//   setTimeout(() => {
+//     console.log("the answer is ", s);
+//   }, 1000)
+// }
+
+// add(2, 2, final);
+
+
+//! when multiple functions are called inside themselves then it is termed as the callback hell
+
+// let orderc = (call_production) => {
+//   console.log("Order place.please call production");
+//   call_production();
+// };
+
+// let productionc = () => {
+//   setTimeout(() => {
+//     console.log("Production has started")
+
+//     setTimeout(() => {
+//       console.log("dishes being prepared");
+
+//       setTimeout(() => {
+//         console.log("food delivered")
+
+//         setTimeout(() => {
+//           console.log("bill generated")
+//         }, 2000)
+//       }, 2000)
+//     }, 2000)
+//   }, 2000)
+// }
+
+// orderc(productionc);
+
+
+//! question
+
+
+let squares = (num,power)=>{
+  let squareans = num**2;
+  setTimeout(()=>{console.log(squareans);},2000)
+   power(num);
+   return ;
+}
+
+let power = (num)=>{
+   setTimeout(()=>{console.log(num**num);},3000)
+}
+
+let sumn =  (a,b,square,powern) => {
+     let number =  a + b;
+     console.log (number);
+     square(number,powern);
+    
+}
+sumn(4,5,squares,power);
