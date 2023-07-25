@@ -1564,3 +1564,20 @@ let sumn =  (a,b,square,powern) => {
     
 }
 sumn(4,5,squares,power);
+
+//! *****************************************promises**********************************
+
+//? Promise handles asynchronous operations*************************************************************************
+
+let datan = new Promise((resolve,reject) => {
+  reject("some issues");
+  // resolve("promise resolved succesfully")
+});
+
+ 
+data.then((item) => {
+  console.log(item);
+}).catch((err) => {
+  console.log(err);
+});
+
