@@ -1398,8 +1398,8 @@ console.log(ne);
 //? first we have to declare script type as module in index.js file
 //? then we have to export the file from where we have to export and we can import from where we can import
 
-import { aa, obj } from "./index2.js";
-console.log(aa, obj);
+// import { aa, obj } from "./index2.js";
+// console.log(aa, obj);
 
 //! =======================================Session storage=====================================================
 
@@ -1416,15 +1416,15 @@ console.log(aa, obj);
 
 
 // // Save data to sessionStorage
-sessionStorage.setItem("keyssssssssssss", "valuessssssssssss");
+// sessionStorage.setItem("keyssssssssssss", "valuessssssssssss");
 
-// Get saved data from sessionStorage
-let data = sessionStorage.getItem("key");
+// // Get saved data from sessionStorage
+// let data = sessionStorage.getItem("key");
 
 
 
-// // Remove all saved data from sessionStorage
-sessionStorage.clear();
+// // // Remove all saved data from sessionStorage
+// sessionStorage.clear();
 
 
 // let key= "name";
@@ -1546,38 +1546,400 @@ sessionStorage.clear();
 //! question
 
 
-let squares = (num,power)=>{
-  let squareans = num**2;
-  setTimeout(()=>{console.log(squareans);},2000)
-   power(num);
-   return ;
-}
+// let squares = (num,power)=>{
+//   let squareans = num**2;
+//   setTimeout(()=>{console.log(squareans);},2000)
+//    power(num);
+//    return ;
+// }
 
-let power = (num)=>{
-   setTimeout(()=>{console.log(num**num);},3000)
-}
+// let power = (num)=>{
+//    setTimeout(()=>{console.log(num**num);},3000)
+// }
 
-let sumn =  (a,b,square,powern) => {
-     let number =  a + b;
-     console.log (number);
-     square(number,powern);
-    
-}
-sumn(4,5,squares,power);
+// let sumn =  (a,b,square,powern) => {
+//      let number =  a + b;
+//      console.log (number);
+//      square(number,powern);
+
+// }
+// sumn(4,5,squares,power);
 
 //! *****************************************promises**********************************
 
 //? Promise handles asynchronous operations*************************************************************************
 
-let datan = new Promise((resolve,reject) => {
-  reject("some issues");
-  // resolve("promise resolved succesfully")
-});
+// let datan = new Promise((resolve,reject) => {
+//   reject("some issues");
+//   // resolve("promise resolved succesfully")
+// });
 
+
+// data.then((item) => {
+//   console.log(item);
+// }).catch((err) => {
+//   console.log(err);
+// });
+
+// //? another example of promise
+
+// var promise = new Promise(function (resolve,reject){
+//   const x = "coding";
+//   const y = "coding";
+//   if(x === y){
+//     resolve();
+//   } else {
+//     reject();
+//   }
+// });
+
+// promise.then(
+//   ()=>{
+//     console.log("Success");
+//   }
+// ).reject(
+//   ()=>{
+//     console.log("variables are not same");
+//   }
+// );
+
+
+// var Mathpromise = new Promise(function (resolve, reject) {
+
+//   var a = 5;
+//   var b = 5;
+//   let s = a + b;
+//   resolve(s);
+
+
+//   // } else {
+//   //   reject();
+//   // }
+// });
+// Mathpromise.then((item) => {
+//   console.log("the sum is",item);
+//   return item ** 2;
+// }).then((item2) => {
+//   console.log("the square is",item2);
+//   return item2 ** item2
+// }).then((item3) => {
+//   console.log("the power is",item3);
+// }).catch(
+//   (err) => {
+//     console.log("err");
+//   }
+// );
+
+
+//?  ! converting the above order code into promise**************************************************************************
+// let is_shop_open = true;
+
+// let order = () => {
+//   return new Promise((resolve,reject) => {
+//     if(is_shop_open){
+//       resolve();
+//     }else{
+//       reject(console.log("shop closed"));
+//     }
+//   })
+// }
+
+// let kitchen = (time,work) => {
+  
+//   return new Promise((resolve,reject)=>{
+//     if(is_shop_open){
+//       // work();
+//       setTimeout(()=>{
+//         resolve(work());
+//       },time);
+//     } else{
+//       reject(console.log("shop closed"))
+//     }
+//   })
+// };
+
+// kitchen(2000,() => console.log("order placed"))
+// .then(()=>{
+//   return kitchen(2000,(console.log("Production started")));
+// })
+// .then(()=>{
+//   return kitchen(2000,(console.log("dishes being prepared")));
+// })
+// .then(()=>{
+//   return kitchen(3000,(console.log("food delivered")));
+// })
+// .then(()=>{
+//   console.log("customer happy");
+// })
+// .catch(()=>{
+//   console.log("customer left");
+// })
+// .finally(()=>{
+//   console.log("day ended");
+// })
+
+
+// fetch('https://dummyjson.com/products/1')
+// .then(res => res.json())
+// .then(json => console.log(json))
+            
+
+// let is_shop_open = true;
+
+// let order = () => {
+//     return new Promise ((resolve , reject ) =>{
+//         if (is_shop_open){
+//             resolve();
+//         }
+//         else{
+//             reject(console.log("shop is closed"));
+//         }
+//     })
+// }
+
+
+// let kitchen = (time,work) => {
+//     return new Promise ((resolve , reject ) => {
+//         if (is_shop_open){
+//             setTimeout(() => {
+//                 resolve(work())
+//             }, time);
+//         }
+//         else{
+//             reject (console.log("shop closed"))
+//         }
+//     })
+// }
+
+// kitchen(2000, () => console.log("order placed"))
+    
+//     .then(() => {
+//         return kitchen (2000, () => console.log("production started"))
+//     })
+//     .then  (() => {
+//         return kitchen (2000, () => console.log("dishes are ready"))
+//     })
+//     .then (() => {
+//         return kitchen (2000, () => console.log ("Food delivered"))
+//     })
+//     .then (() => {
+//         console.log("coustumer happy") 
+//     })
+//     .catch(() => {
+//         console.log("cutomer Left")
+//     })
+//     .finally(() => {
+//         console.log("day end")
+//     })
+
+
+//*********************************************Promise hell************************************* */
+
+// let order = (people) => {
+//   return new Promise((resolve,reject)=>{
+//     if(people){
+//       resolve("order given for people"+people);
+//     }else{
+//       reject("err");
+//     }
+//   });
+// }
+
+// let production = (item) => {
+//   return new Pormise ((resolve,reject)=> {
+//     return new Pormise((resolve,reject)=>{
+//       if(item){
+//         resolve("production started for" + item)
+//       }
+//       else{
+//         reject("err");
+//       }
+//     })
+//   })
+// };
+
+// let delivery = () => {
+//   return new Promise((resolve,reject)=>{
+//     resolve("order delivered");
+//   })
+// }
+
+// order(10)
+// .then((res)=>{
+//    console.log(res);
+//    production("dhokla")
+//    .then((result)=>{
+//      console.log(result);
+//      delivery(result)                        
+//      .then((result)=>{                    //! Promise hell to resolve this problem we use async await
+//        console.log(result)
+//      }).catch((err)=>{
+//        console.log(err);
+//      })
+//    }).catch((err)=>{
+//     console.log(err);
+//    })
+// }).catch((err)=>{
+//   console.log(err);
+// })
+
+//! **************************************************Promise all settled important very very **********************************************************
+
+// let prom1 = new Promise((resolve,reject)=>{
+//   reject();
+// });
+
+
+// let prom2 = new Promise((resolve,reject) => {
+//     resolve(20);
+// })
+
+// Promise.allSettled([prom1,prom2])
+// .then((resut) => {
+//   console.log(result);
+// })
+// .catch((err) => {
+//   console.log(err);
+// })
+
+//! *************************************************************Promise all reject immediately if any of the promise got rejected
+
+//!  Promise.all() 
+// returns value only when all promises have resolved
+// returns on only one promise rejected it does not return any values
+
+// const p1 = new Promise((resolve,reject)=>{
+//   setTimeout(()=>{
+//     console.log("The first promise has resolved");
+//     resolve(10);
+//   },1000);
+// });
+
+// const p2 = new Promise((resolve,reject)=>{
+//   setTimeout(()=>{
+//     console.log("The second promise has rejected");
+//     reject("Failed");
+//   },1000);
+// });
+
+// const p3 = new Promise((resolve,reject)=>{
+//   setTimeout(()=>{
+//     console.log("The Third promise has resolved");
+//     resolve(30);
+//   },1000);
+// });
+
+// Promise.all([p1,p2,p3]).then(console.log).catch(console.log);
+
+
+
+//!                **************************************Promise any ******************************************************************
+
+//!                          fetching api and performing opertions on it
+
+
+//  fetch('https://dummyjson.com/products')
+// .then(res => res.json())
+// .then(data => console.log(data)
+
+// )
+
+
+            
+//  fetch('https://dummyjson.com/products')
+//  .then((result)=>{
+//    return result.json();
+//  }).then((data)=>{
+//   console.log(data);
  
-data.then((item) => {
-  console.log(item);
-}).catch((err) => {
-  console.log(err);
-});
 
+//  let allProducts = data.products;
+//  console.log(allProducts);
+
+//  let filtered = allProducts.filter((e)=>{
+//   return e.brand =="Apple";
+//  });
+//  console.log(filtered);
+
+//  let m = filtered.map((e)=>{
+//   return e;
+//  })
+//  console.log(m);
+
+// });
+
+
+//short form for fetching api and filtering data from it
+  
+
+// fetch('https://dummyjson.com/products')
+// .then(res => res.json())
+// .then(data => console.log(data.products))
+
+
+
+
+//! fetching data directly from axios************************************************
+
+//  const getdata=()=>{
+//   axios.get("https://jsonplaceholder.typecode.com/post")
+//  .then((response)=>)
+//  }
+
+//! We have to include axios script in the main file
+
+//! ****************************************Async****************************************************
+
+let hello1 = async ()=>{
+  return "hello"
+}
+console.log(hello1());
+
+hello1().then((result)=>{
+   console.log(result)
+})
+
+//? *******************************************Async**************************************************
+
+  // async function restaurant (){
+  //   let people = await order(15);
+  //   console.log(people)
+  //   let select = await production("khichdi")
+  //   console.log(select)
+  //   let final = await delivery(select)
+  //   console.log(final)
+  // }
+
+  // restaurant();
+//! *********************************************************************************************************
+  async function fetchUsers(){
+    const response = await fetch("https://jsonplaceholder.typicode.com/todos");
+    const users = await response.json();
+    return users;
+  }
+
+  fetchUsers()
+    .then((users)=>{
+      console.log(users);
+    })
+    .catch((err)=>{
+      console.log(err);
+    });
+  
+
+    //! the correcgt way================================================================
+
+   const fetchAPI = async function(){
+      try{
+        const res = await fetch("https://jsonplaceholder.typicode.com/todos");
+        const data = await res.json()
+        console.log(data);
+        return "Done with fetchAPI"
+      }catch(err){
+        console.log(err);
+      }
+   }
+
+   fetchAPI().then((msg)=>{
+    console.log(msg);
+   })
