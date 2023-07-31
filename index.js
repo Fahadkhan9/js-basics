@@ -1929,17 +1929,135 @@ hello1().then((result)=>{
 
     //! the correcgt way================================================================
 
-   const fetchAPI = async function(){
-      try{
-        const res = await fetch("https://jsonplaceholder.typicode.com/todos");
-        const data = await res.json()
-        console.log(data);
-        return "Done with fetchAPI"
-      }catch(err){
-        console.log(err);
-      }
-   }
+  //  const fetchAPI = async function(){
+  //     try{
+  //       const res = await fetch("https://jsonplaceholder.typicode.com/todos");
+  //       const data = await res.json()
+  //       console.log(data);
+  //       return "Done with fetchAPI"
+  //     }catch(err){
+  //       console.log(err);
+  //     }
+  //  }
 
-   fetchAPI().then((msg)=>{
-    console.log(msg);
-   })
+  //  fetchAPI().then((msg)=>{
+  //   console.log(msg);
+  //  })
+
+
+  //! try block is used to remove the red errors in javascript
+
+  try{
+    console.log(Helloworld)
+  }
+   catch(err){
+     console.log("this is an error");
+   }
+   
+
+//? ***************************************regular expressions***************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let text = "Is this all there is ?"
+// let pattern = /[abc]/g;
+// let result = text.match(pattern);
+// console.log(result);
+
+// all letters between a-h
+// let text = "Is this all there is?";
+// let pattern = /[a-h]/g;
+// let result = text.match(pattern);
+// console.log(result);
+
+// all letters accept a-h
+// let textn = "Is this all there is?";
+// let patternn = /[^a-h]/g;
+// let resultn = textn.match(pattern);
+// console.log(result);
+
+// let textn = "12345678449";
+// let patternn = /[^1-4]/g;
+// let resultn = textn.match(patternn);
+// console.log(result);
+
+//? *************************************Javascript reg exp + quantifier*******************************************
+// Quantifier description
+//* mathc zero or more times.
+// + match one or more times.
+// ? Match zero or one time
+// . for all 
+
+ //! The n+ quantifier matches any string that contains at least one n
+
+ // Do a global search for at least one word charachter: 
+
+ // let text = "Hellooo World! Hello W3Schools!";
+ // let pattern = /o+/
+ // let result = text.match(pattern);
+ // console.log(result);
+
+ //? the n? quantifier matches any string that contains zero or one occurences of n.
+
+ // let text = "1,100 or 1000?";
+ //let match = /[0-9]/g
+ //let result = string.match(match)
+ // console.log(result)
+
+ //[^a-z] if character in between no
+//  let string = "this is my no 887158A2554"
+//  let match = /[0-9][^a-z]/gi
+//  let result = string.match(match);
+//  console.log(result);
+
+// match the gmail using regex and quantifiers
+
+// let gmail = "this is my email fahad96133@gmail.com"
+
+// let matchs = /[a-zA-Z]{1,12}[0-9]{1,4}@[a-z]{1,5}\.com/   //?  the process is called as grooping
+// let results = gmail.match(matchs)
+// console.log(results)
+
+//for password
+// let password = "arshia*2023"
+
+// let matchss = /[a-z]{1,10}\*[0-9]{1-10}/
+// let result = password.match(matchss)
+// console.log(result)
+
+//The quantifier * means zero or more. It is the same
+
+// let str = 'JavaScript is not Java';
+// let re = /Java\w*/g
+// let results = str.match(re);
+//console.log(results)
+
+//greedy matching 
+// let regexp = /".+"/g;
+// let str = 'a "witch" and her "broom" is one';
+// console.log(str.match(regexp));
+
+
+
+// let str  = "SBI9584725534"
+// let homework = /SBI[0-9]{10}/
+
+// if(str.match(homework)){
+//   console.log("valid id")
+// }
+// else{
+//   console.log("Invalid id")
+// }
