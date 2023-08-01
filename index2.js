@@ -5,3 +5,8 @@ var obj = {
     stream : "web development"
 }
  export{aa,obj};
+
+// Patterns 
+
+
+// Logic building questions ******************************************************************************************
