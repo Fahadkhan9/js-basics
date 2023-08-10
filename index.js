@@ -1517,30 +1517,30 @@ console.log(ne);
 
 //! when multiple functions are called inside themselves then it is termed as the callback hell
 
-// let orderc = (call_production) => {
-//   console.log("Order place.please call production");
-//   call_production();
-// };
+let orderc = (call_production) => {
+  console.log("Order place.please call production");
+  call_production();
+};
 
-// let productionc = () => {
-//   setTimeout(() => {
-//     console.log("Production has started")
+let productionc = () => {
+  setTimeout(() => {
+    console.log("Production has started")
 
-//     setTimeout(() => {
-//       console.log("dishes being prepared");
+    setTimeout(() => {
+      console.log("dishes being prepared");
 
-//       setTimeout(() => {
-//         console.log("food delivered")
+      setTimeout(() => {
+        console.log("food delivered")
 
-//         setTimeout(() => {
-//           console.log("bill generated")
-//         }, 2000)
-//       }, 2000)
-//     }, 2000)
-//   }, 2000)
-// }
+        setTimeout(() => {
+          console.log("bill generated")
+        }, 2000)
+      }, 2000)
+    }, 2000)
+  }, 2000)
+}
 
-// orderc(productionc);
+orderc(productionc);
 
 
 //! question
@@ -1890,14 +1890,14 @@ console.log(ne);
 
 //! ****************************************Async****************************************************
 
-let hello1 = async ()=>{
-  return "hello"
-}
-console.log(hello1());
+// let hello1 = async ()=>{
+//   return "hello"
+// }
+// console.log(hello1());
 
-hello1().then((result)=>{
-   console.log(result)
-})
+// hello1().then((result)=>{
+//    console.log(result)
+// })
 
 //? *******************************************Async**************************************************
 
@@ -1912,19 +1912,19 @@ hello1().then((result)=>{
 
   // restaurant();
 //! *********************************************************************************************************
-  async function fetchUsers(){
-    const response = await fetch("https://jsonplaceholder.typicode.com/todos");
-    const users = await response.json();
-    return users;
-  }
+  // async function fetchUsers(){
+  //   const response = await fetch("https://jsonplaceholder.typicode.com/todos");
+  //   const users = await response.json();
+  //   return users;
+  // }
 
-  fetchUsers()
-    .then((users)=>{
-      console.log(users);
-    })
-    .catch((err)=>{
-      console.log(err);
-    });
+  // fetchUsers()
+  //   .then((users)=>{
+  //     console.log(users);
+  //   })
+  //   .catch((err)=>{
+  //     console.log(err);
+  //   });
   
 
     //! the correcgt way================================================================
@@ -1947,12 +1947,12 @@ hello1().then((result)=>{
 
   //! try block is used to remove the red errors in javascript
 
-  try{
-    console.log(Helloworld)
-  }
-   catch(err){
-     console.log("this is an error");
-   }
+  // try{
+  //   console.log(Helloworld)
+  // }
+  //  catch(err){
+  //    console.log("this is an error");
+  //  }
    
 
 //? ***************************************regular expressions***************************************************
@@ -2063,3 +2063,106 @@ hello1().then((result)=>{
 // }
 
 
+//? *************** patterns**********************************************************************
+
+//  var pattern = "";
+//  for(var i = 0;i<6;i++){
+//    for(var j = 0;j<5;i++){ 
+//   pattern + "*";
+//    }
+//    pattern = pattern + "\n";
+//  }
+//  console.log(pattern);
+
+ //? 
+   
+//  var pattern = "";
+//  for(var i = 0;i<6;i++){
+//    for(var j = 0;j<i;j++){ 
+//  pattern = pattern + "*";
+//    }
+//    pattern = pattern + "\n";
+//  }
+//  console.log(pattern);
+
+
+//  var number = +prompt("enter the number");
+//  var pattern = "";
+//  for(var i = number;i>0;i--){
+//    for(var j = 0;j<i;j++){ 
+//  pattern = pattern + "*";
+//    }
+//    pattern = pattern + "\n";
+//  }
+//  console.log(pattern);
+
+ 
+
+//  var number = +prompt("enter the number");
+//  var pattern = "";
+//  for(var i = number;i>=0;i--){
+//    for(var j = 0;j<number-i;j++){ 
+//  pattern = pattern + " ";
+//    }
+//    for(var j = 0;j<i;j++){ 
+//  pattern = pattern + "*";
+//    }
+//    pattern = pattern + "\n";
+//  }
+//  console.log(pattern);
+
+
+// var number = +prompt("enter the number");
+//  var pattern = "";
+//  for(var i = 1;i<=number;i++){
+//    for(var j = 0;j<number-i;j++){ 
+//  pattern = pattern + " ";
+//    }
+//    for(var j = 0;j<i;j++){ 
+//  pattern = pattern + "*";
+//    }
+   
+//  }
+//  console.log(pattern);
+
+
+// let text = "My name is Fahad Khan";
+// let patterm = /is/gi;
+// let ans = text.match(patterm);
+// console.log(ans);
+
+// let text = "My name Is Fahad Khan";
+// let patterm = /is/gi;
+// let ans = text.match(patterm);
+// console.log(ans);
+
+// let text = "Is this all there is?";
+// let pattern = /[abc]/g;
+// let result = text.match(pattern);
+// console.log(result);
+
+
+// let text = "Hellooo World! Hello W3Schools!";
+// let pattern = /o+/;
+// let result = text.match(pattern);
+// console.log(result);
+
+
+// let text = "1, 100 or 1000?";
+// let pattern = /10?/g;
+// let result = text.match(pattern)
+// console.log(result);
+
+
+// let string= "this is my no 887158A2554"
+// let match = /[0-9][^a-z]/gi
+// let result = string.match(match)
+// console.log(result)
+
+// let email = "fahad96133@gmail.com";
+// let pattern = /[a-z]{1,10}[0-9]{1,9}@[a-z]{0,9}\.com/
+// let result = email.match(pattern);
+// console.log(email);
+
+let ans = 3;
+ ans === 3 ?
