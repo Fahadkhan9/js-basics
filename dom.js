@@ -80,3 +80,24 @@ function fh1(){
     h1.classList.toggle("xyz");
     console.log("njfnv");
 }
+
+var a = document.getElementById("Inner").parentElement;
+console.log(a);
+
+//children
+var aa = document.getElementById("Inner").children[0];
+console.log(a);
+aa.innerText = "hello";
+
+
+//create element create text 
+// var newElement = document.createElement("p");
+var newElement = document.createElement("h2");
+console.log(newElement);
+var newText = document.createTextNode("This is just text");
+console.log(newText);
+// The append() method inserts specified content at the end of selected elements
+
+newElement.appendChild(newText)
+console.log(newElement);
+document.getElementsById("appn").appendChild(newElement)
