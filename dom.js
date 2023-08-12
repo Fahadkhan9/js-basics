@@ -98,6 +98,44 @@ var newText = document.createTextNode("This is just text");
 console.log(newText);
 // The append() method inserts specified content at the end of selected elements
 
-newElement.appendChild(newText)
-console.log(newElement);
-document.getElementsById("appn").appendChild(newElement)
+// newElement.appendChild(newText)
+// console.log(newElement);
+// document.getElementById("appn").appendChild(newElement);
+
+// var fname = document.getElementById("fname");
+// var div = document.getElementById("div");
+
+//*  **************************************onfocus
+
+// fname.addEventListener("focus",()=>{
+//     fname.style.background = "red";
+// })
+
+
+// fname.addEventListener("change",(e)=>{
+//     console.log(e.target.value)
+//     div.innerHTML = e.target.value;
+// })
+// console.log("hello world");
+
+
+var fname = document.getElementById("fname");
+var lname = document.getElementById("lname");
+let submit = document.getElementById("submit");
+let err = document.getElementById("err");
+
+submit.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    console.log(e.target.fname.value);
+    console.log(e.target.lname.value);
+    if(fname.value == ""){
+        err.innerHTML = "Please enter your name";
+        return false;
+    }
+    else if(fname.value.length < 5){
+        err.innerHTML = "please enter the name of length greater then 5";
+        return false;
+    }
+    alert("form submitted succesfully");
+    return true;
+})
